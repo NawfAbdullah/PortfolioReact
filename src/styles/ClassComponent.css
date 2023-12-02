@@ -1,0 +1,21 @@
+.class-component{
+    font-family: 'Fira Code', monospace;
+    box-shadow: inset 3.18px 2.08px 5.26px -0.66px rgba(0, 0, 0, 0.15),
+  inset -4.77px -3.12px 5.26px -0.66px rgba(0, 0, 0, 0.3),
+  9.54px 6.25px 3.95px -1.97px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 10px;
+  height: max-content;
+  width: 90%;
+  margin: 10px;
+}
+
+.class-component li{
+    list-style: none;
+    margin-top: 5px;
+    letter-spacing: 5;
+}
+
+.class-component>ul{
+    font-size: 0.9rem;
+}

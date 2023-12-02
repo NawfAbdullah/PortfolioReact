@@ -1,0 +1,181 @@
+.home{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+.home section{
+    scroll-snap-type: y mandatory;
+    min-height: 100vh;
+}
+
+.home   h2{
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    letter-spacing: 5px;
+  }
+
+
+/*************************************** Hero *********************************************/
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#hero img{
+    width: 50%;
+}
+
+#hero p.hello{
+    margin: 0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2FAF91;
+    color: #282c34;
+    font-family: 'Russo One', sans-serif;
+    font-size: 2.7rem;
+}
+
+#hero h1{
+    font-size: 5rem;
+    margin: 0;
+    color: #2FAF91;
+    font-family: 'Russo One', sans-serif;
+}
+
+#hero .typewriter{
+    font-family: 'Fira Code', monospace;
+    color: #2FAF91;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #F9F871; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    width: 0;
+    animation: 
+      typing 3.5s steps(22, end) 700ms forwards,
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #F9F871; }
+  }
+
+
+
+  /******************************************Skills**************************************************/
+
+
+
+  #skills>.box-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 80vw;
+    position: relative;
+  }
+
+  #skills>.box-container>.box{
+    padding: 10px;
+    border: 1px solid #fff;
+    width: 30%;
+  }
+
+  #skills>.box-container>.box>div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #skills>.box-container>.box h3{
+    margin: 0;
+    margin-left: 5px;
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    border-bottom: 2px solid #fff;
+  }
+
+  #skills>.box-container>.box span{
+    margin-top: 10px;
+    font-size: 1rem;
+    color: rgba(192,192,192,0.8);
+    font-family: 'Fira Code', monospace;
+  }
+
+  #skills>.box-container>.box p{
+    margin: 0;
+    margin-left: 5%;
+    padding-left: 5%;
+    font-family: 'Fira Code', monospace;
+    font-size: 1.2rem;
+    border-left: 2px solid rgba(192,192,192,0.8);
+  }
+
+
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 2fr));
+    grid-template-rows: repeat(2, minmax(150px, 2fr));
+  }
+
+  .tem-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media only screen and (max-width:770px){
+    #hero{
+        flex-direction: column-reverse;
+    }
+  }
+  @media only screen and (max-width:1130px){
+    #skills>.box-container>.box h3{
+        font-size: 1.7rem;
+    }
+  }
+
+
+  @media only screen and (max-width:951px){
+    #skills>.box-container>.box h3{
+        font-size: 1.5rem;
+    }
+
+    .grid{
+      grid-template-columns: repeat(1, minmax(150px, 2fr));
+      grid-template-rows: repeat(4, minmax(150px, 2fr));
+    }
+  }
+
+  @media only screen and (max-width:897px){
+    #skills>.box-container>.box h3{
+        font-size: 2rem;
+    }
+
+    #skills>.box-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills>.box-container>.box{
+        width: 90%;
+    }
+  }
+
+  @media only screen and (max-width:435px){
+    #hero h1{
+      font-size: 4rem;
+    }
+  }

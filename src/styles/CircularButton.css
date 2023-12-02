@@ -1,0 +1,28 @@
+.circular-button{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    background-color: #2FAF91;
+    border: none;
+    font-family: 'Play', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.circular-button:hover{
+    animation: bounce 1s infinite;
+}
+
+    
+
+@keyframes bounce {
+    from,to{
+        box-shadow: 0px 0px 0px 0px rgba(42, 197, 161,0.4);
+    }
+    50%{
+        box-shadow: 0px 0px 10px 25px rgba(42, 197, 161,0.2);
+    }
+    
+}
