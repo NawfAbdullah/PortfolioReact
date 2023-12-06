@@ -1,5 +1,5 @@
 import '../styles/Home.css'
-import Me from '../assets/images/me2.png'
+import Me from '../assets/images/me21.png'
 import {motion} from 'framer-motion'
 import CircularButton from '../components/Buttons/CircularButton';
 import DnsRoundedIcon from '@mui/icons-material/DnsRounded';
