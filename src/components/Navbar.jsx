@@ -1,4 +1,4 @@
-import { Close, Email, Instagram, LinkedIn, Menu } from '@mui/icons-material';
+import { Close, Instagram, LinkedIn, Menu,GitHub } from '@mui/icons-material';
 import '../styles/Navbar.css'
 import { useState } from 'react';
 import {motion} from 'framer-motion'
@@ -45,8 +45,8 @@ const Navbar = () => {
                 <a href="https://in.linkedin.com/in/nawf-abdullah-69474a225">
                     <LinkedIn />    
                 </a>
-                <a href="mailto:k.nawfabdullah@gmail.com">
-                    <Email />
+                <a href="https://github.com/NawfAbdullah">
+                    <GitHub />
                 </a>
             </div>
             {window.innerWidth<532&&<div className='hamburger' onClick={()=>setShowNav(!showNav)}>{!showNav?<Menu />:<Close/>}</div>}

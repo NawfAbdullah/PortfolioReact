@@ -1,13 +1,13 @@
 import '../styles/Home.css'
 import Me from '../assets/images/me21.png'
 import {motion} from 'framer-motion'
-import CircularButton from '../components/Buttons/CircularButton';
 import DnsRoundedIcon from '@mui/icons-material/DnsRounded';
 import DesktopMacRoundedIcon from '@mui/icons-material/DesktopMacRounded';
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import Projects from '../components/Project';
 import ClassComponent from '../components/ClassComponent';
 import Contact from '../components/Contact';
+import ButtonInput from '../components/ButtonInput';
 
 const Home = () => {
     return ( 
@@ -23,11 +23,12 @@ const Home = () => {
                         Nawf Abdullah
                     </motion.h1>
                     <p className='typewriter'>a full stack developer</p>
-                    <CircularButton onClick={()=>{
+                    <ButtonInput placeholder={"Email/Phone"} btn_text={"Wanna talk??"} onClick={(data)=>{console.log(data);}}/>
+                    {/* <CircularButton onClick={()=>{
                         document.querySelector('#contact').scrollIntoView({ 
                             behavior: 'smooth' ,
                           });
-                    }}>Start a project??</CircularButton>
+                    }}>Start a project??</CircularButton> */}
                 </div>
                 <div className="hero-img">
                     <motion.img 
@@ -48,7 +49,7 @@ const Home = () => {
                 </div>
             </section>
             <section id="skills">
-                <h2>Skills installed</h2>
+                <h2>What do I do?</h2>
                 <div className="box-container">
                     <motion.div className="box" initial={{y:300,opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:0.2,delay:0}}>
                         <div>
@@ -87,7 +88,7 @@ const Home = () => {
                 <Projects />
             </section>
             <section id="journey">
-                <h2>Journey</h2>
+                <h2>Language I speak</h2>
                 <div className="grid">
                     <ClassComponent className={"Python"} delay={1} skillset={{
                         name:"'python'",
