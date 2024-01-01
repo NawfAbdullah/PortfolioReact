@@ -6,8 +6,10 @@ import DesktopMacRoundedIcon from '@mui/icons-material/DesktopMacRounded';
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import Projects from '../components/Project';
 import ClassComponent from '../components/ClassComponent';
-import Contact from '../components/Contact';
+import Contact from '../components/Terminal';
 import ButtonInput from '../components/ButtonInput';
+import SkillSet from '../components/Skillset';
+import Terminal from '../components/Terminal';
 
 const Home = () => {
     return ( 
@@ -24,11 +26,6 @@ const Home = () => {
                     </motion.h1>
                     <p className='typewriter'>a full stack developer</p>
                     <ButtonInput placeholder={"Email/Phone"} btn_text={"Wanna talk??"} onClick={(data)=>{console.log(data);}}/>
-                    {/* <CircularButton onClick={()=>{
-                        document.querySelector('#contact').scrollIntoView({ 
-                            behavior: 'smooth' ,
-                          });
-                    }}>Start a project??</CircularButton> */}
                 </div>
                 <div className="hero-img">
                     <motion.img 
@@ -83,11 +80,12 @@ const Home = () => {
 
                 </div>
             </section>
+            <SkillSet />
             <section id="projects">
                 <h2>Projects</h2>
                 <Projects />
             </section>
-            <section id="journey">
+            {window.innerWidth>550&&<section id="journey">
                 <h2>Language I speak</h2>
                 <div className="grid">
                     <ClassComponent className={"Python"} delay={1} skillset={{
@@ -119,11 +117,11 @@ const Home = () => {
                         studiedFrom:"['udemy','youtube']"
                     }}/>
                 </div>
-            </section>
+            </section>}
             <section id="contact">
                 <h2>Contact</h2>
                 <div className="tem-container">
-                    <Contact />
+                    <Terminal />
                 </div>
                
             </section>
