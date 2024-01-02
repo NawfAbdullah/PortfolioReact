@@ -18,8 +18,8 @@
     position: relative;
     border-radius: 10px;
     transition: 200ms;
-    background: rgb(219,219,219);
-background: linear-gradient(90deg, rgba(219,219,219,1) 0%, rgba(255,255,255,1) 81%, rgba(222,220,220,1) 100%);
+    background: rgb(216,215,217);
+    background: linear-gradient(151deg, rgba(216,215,217,1) 0%, rgba(255,240,240,1) 36%, rgba(232,230,237,1) 95%);
 }
 
 .project>.outline>.controls{

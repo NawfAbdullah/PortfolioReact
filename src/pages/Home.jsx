@@ -6,10 +6,9 @@ import DesktopMacRoundedIcon from '@mui/icons-material/DesktopMacRounded';
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import Projects from '../components/Project';
 import ClassComponent from '../components/ClassComponent';
-import Contact from '../components/Terminal';
+import Contact from '../components/Contact';
 import ButtonInput from '../components/ButtonInput';
 import SkillSet from '../components/Skillset';
-import Terminal from '../components/Terminal';
 
 const Home = () => {
     return ( 
@@ -77,7 +76,7 @@ const Home = () => {
                         <p>I specialize in Android app development using Flutter and create desktop applications with Tkinter.</p>
                         <span>&lt;/h3&gt;</span>
                     </motion.div>
-
+                        
                 </div>
             </section>
             <SkillSet />
@@ -121,7 +120,8 @@ const Home = () => {
             <section id="contact">
                 <h2>Contact</h2>
                 <div className="tem-container">
-                    <Terminal />
+                    {/* <ButtonInput placeholder={"Email/Phone"} btn_text={"Wanna talk??"} onClick={(data)=>{console.log(data);}}/> */}
+                    <Contact />
                 </div>
                
             </section>
